@@ -9,6 +9,6 @@ export const PrivateRoute = () => {
     const user = useSelector((state)=>state.auth.user)
 
     //user içi true ise
-  return user?.email ? <Outlet/> : <Navigate to="/login"/>
+  return user?.email && user?.password ? <Outlet/> : <Navigate to="/login"/>
   
 }

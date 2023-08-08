@@ -12,7 +12,7 @@ initialState,
 
 reducers:{
     // buradaki setUser fonc. initialState içindeki userı update edecek.
-    setuser:(state,action)=>{
+    setUser:(state,action)=>{
         state.user=action.payload
     },
     setDelUser:(state)=>{
